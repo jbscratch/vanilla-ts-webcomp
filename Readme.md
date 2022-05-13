@@ -1,2 +1,2 @@
-# Vamilla TS Webcomp 
+# Vanilla TS Webcomp 
 
