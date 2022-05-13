@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jbscratch/vanilla-ts-webcomp/issues"
   },
-  "homepage": "https://github.com/jbscratch/vanilla-ts-webcomp#readme"
+  "homepage": "https://github.com/jbscratch/vanilla-ts-webcomp#readme",
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
 }
