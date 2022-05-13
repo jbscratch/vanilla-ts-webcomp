@@ -1,0 +1,20 @@
+{
+  "name": "vanilla-ts-webcomp",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbscratch/vanilla-ts-webcomp.git"
+  },
+  "keywords": [],
+  "author": "Benjamin Jesuiter <bjesuiter@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbscratch/vanilla-ts-webcomp/issues"
+  },
+  "homepage": "https://github.com/jbscratch/vanilla-ts-webcomp#readme"
+}
