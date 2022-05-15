@@ -50,16 +50,16 @@ template.innerHTML = `
 </div>`;
 
 class EmployeeCard extends HTMLElement {
-  #name: string = "";
-  #avatar: string = "";
+  private name: string = "";
+  private avatar: string = "";
 
   attributeChangedCallback() {
     this.readAttributes();
   }
 
   readAttributes() {
-    this.#name = this.getAttribute("name") ?? "Undefined name";
-    this.#avatar = this.getAttribute("avatar") ?? "assets/avatar.png";
+    this.name = this.getAttribute("name") ?? "Undefined name";
+    this.avatar = this.getAttribute("avatar") ?? "assets/avatar.png";
   }
 
   constructor() {
@@ -77,11 +77,11 @@ class EmployeeCard extends HTMLElement {
   connectedCallback() {
     const h3 = this.shadowRoot?.querySelector("h3");
     if (h3 != null) {
-      h3.innerText = this.#name;
+      h3.innerText = this.name;
     }
     const img = this.shadowRoot?.querySelector("img");
     if (img) {
-      img.src = this.#avatar;
+      img.src = this.avatar;
     }
   }
 }
