@@ -4,5 +4,4 @@
 
 1. Clone Repo 
 2. `npm i`
-3. `npm run watch` (Typescript compile)
-4. `npm start`
+4. `npm start` (starts typescript compile in watch mode and a webserver serving the whole repo)
