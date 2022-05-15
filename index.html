@@ -2,15 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Components</title>
+    <style>
+        h2 {
+            color: purple;
+        }
+    </style>
+
 </head>
 
 <body>
 
     <h1>Vanilla TS Webcomp (Shell)</h1>
+
+    <h2>Employee Card Example</h2>
+    <employee-card name="Leah Crystal" avatar=assets/avatar.png>
+        <div slot="id"><b>ID:</b> 238</div>
+        <div slot="job title"><b>Job Title:</b> Database Administrator</div>
+        <div slot="email"><b>Email:</b> lcrystal34@gmail.com</div>
+        <div slot="phone"><b>Phone:</b> 292-856-410</div>
+    </employee-card>
+    <!-- scripts -->
+    <script src="dist/employee-card.js"></script>
 
 </body>
 
