@@ -1,20 +1,42 @@
 const template = document.createElement("template");
 template.innerHTML = `
+
 <style>
-<style>
-  .employee-card {
+
+  :host {
+
+    --max-width: 400px;
+
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+    max-width: var(--max-width);
     font-family: sans-serif;
     background: #f4f6f7;
-    width: 250px;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-bottom: 10px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  img {
+    width: 100%;
+  }
+  
+  /* Add some padding inside the card container */
+  .body {
+    padding: 2px 16px;
   }
 
 </style>
-<div class="employee-card">
+<div class="card">
   <img/>
-  <div>
+  <div class="body">
     <h3></h3>
     <div class="details">
       <p><slot name="id"/></p>
@@ -59,4 +81,5 @@ class EmployeeCard extends HTMLElement {
     }
   }
 }
+
 window.customElements.define("employee-card", EmployeeCard);
