@@ -1,3 +1,5 @@
+import lodash from 'https://cdn.skypack.dev/lodash';
+
 const template = document.createElement("template");
 template.innerHTML = `
 
@@ -65,6 +67,8 @@ class EmployeeCard extends HTMLElement {
     this.attachShadow({ mode: "open" });
     this.shadowRoot?.appendChild(template.content.cloneNode(true));
     this.readAttributes();
+
+    console.log(`Found lodash on url, Version: `, lodash.VERSION);
   }
 
   /**
