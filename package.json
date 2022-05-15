@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/jbscratch/vanilla-ts-webcomp#readme",
   "devDependencies": {
+    "@types/lodash": "^4.14.182",
     "@web/dev-server": "^0.1.31",
     "del-cli": "^4.0.1",
     "typescript": "^4.6.4"
