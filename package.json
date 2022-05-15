@@ -7,7 +7,7 @@
     "start": "concurrently \"npm:watch\" \"npm:serve\"",
     "build": "del dist/* && tsc",
     "watch": "del dist/* && tsc --watch",
-"serve": "web-dev-server",
+    "serve": "web-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +26,7 @@
     "@web/dev-server": "^0.1.31",
     "concurrently": "^7.2.0",
     "del-cli": "^4.0.1",
+    "prettier": "^2.6.2",
     "typescript": "^4.6.4"
   }
 }
