@@ -86,6 +86,10 @@ class EmployeeCard extends HTMLElement {
   }
 }
 
+/**
+ * A test function to have something exported from here
+ * @returns
+ */
 export function getTypes() {
   return "employee-card-getTypes function";
 }
