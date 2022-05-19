@@ -13,6 +13,11 @@
         }
     </style>
 
+    <!-- Tests importing functions from the bundle -->
+    <script type="module">
+        import { getTypes } from "./dist/bundle.js"
+        console.log(getTypes());
+    </script>
 </head>
 
 <body>
@@ -28,8 +33,7 @@
     </employee-card>
 
     <!-- scripts -->
-    <script type="module" src="dist/employee-card.js"></script>
-
+    <script type="module" src="dist/bundle.js"></script>
 </body>
 
 </html>
