@@ -1,3 +1,11 @@
 export interface SomeSharedLib {
-    version: string;
+  version: string;
+}
+
+function blaahhhh() {
+  return "blablah";
+}
+
+export function bobShared() {
+  blaahhhh();
 }
