@@ -1,4 +1,4 @@
-import lodash from 'https://cdn.skypack.dev/lodash';
+import lodash from "https://cdn.skypack.dev/lodash";
 
 const template = document.createElement("template");
 template.innerHTML = `
@@ -84,6 +84,10 @@ class EmployeeCard extends HTMLElement {
       img.src = this.avatar;
     }
   }
+}
+
+export function getTypes() {
+  return "employee-card-getTypes function";
 }
 
 window.customElements.define("employee-card", EmployeeCard);
